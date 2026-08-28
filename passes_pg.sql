@@ -4,9 +4,6 @@
 
 \restrict V2jdgwmDJrdoaJFryXLpM651ekSmvPuYkcr4pi1oMGHV7ujLgxy72Rbf25RivfC
 
--- Dumped from database version 17.8 (Postgres.app)
--- Dumped by pg_dump version 17.8 (Postgres.app)
-
 SET statement_timeout = 0;
 SET lock_timeout = 0;
 SET idle_in_transaction_session_timeout = 0;
@@ -24,7 +21,7 @@ SET default_tablespace = '';
 SET default_table_access_method = heap;
 
 --
--- Name: access_point; Type: TABLE; Schema: public; Owner: etterellar
+-- Name: access_point; Type: TABLE; Schema: public; Owner: runner
 --
 
 CREATE TABLE public.access_point (
@@ -35,10 +32,10 @@ CREATE TABLE public.access_point (
 );
 
 
-ALTER TABLE public.access_point OWNER TO etterellar;
+ALTER TABLE public.access_point OWNER TO runner;
 
 --
--- Name: access_point_id_seq; Type: SEQUENCE; Schema: public; Owner: etterellar
+-- Name: access_point_id_seq; Type: SEQUENCE; Schema: public; Owner: runner
 --
 
 CREATE SEQUENCE public.access_point_id_seq
@@ -50,17 +47,17 @@ CREATE SEQUENCE public.access_point_id_seq
     CACHE 1;
 
 
-ALTER SEQUENCE public.access_point_id_seq OWNER TO etterellar;
+ALTER SEQUENCE public.access_point_id_seq OWNER TO runner;
 
 --
--- Name: access_point_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: etterellar
+-- Name: access_point_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: runner
 --
 
 ALTER SEQUENCE public.access_point_id_seq OWNED BY public.access_point.id;
 
 
 --
--- Name: department; Type: TABLE; Schema: public; Owner: etterellar
+-- Name: department; Type: TABLE; Schema: public; Owner: runner
 --
 
 CREATE TABLE public.department (
@@ -69,10 +66,10 @@ CREATE TABLE public.department (
 );
 
 
-ALTER TABLE public.department OWNER TO etterellar;
+ALTER TABLE public.department OWNER TO runner;
 
 --
--- Name: department_id_seq; Type: SEQUENCE; Schema: public; Owner: etterellar
+-- Name: department_id_seq; Type: SEQUENCE; Schema: public; Owner: runner
 --
 
 CREATE SEQUENCE public.department_id_seq
@@ -84,17 +81,17 @@ CREATE SEQUENCE public.department_id_seq
     CACHE 1;
 
 
-ALTER SEQUENCE public.department_id_seq OWNER TO etterellar;
+ALTER SEQUENCE public.department_id_seq OWNER TO runner;
 
 --
--- Name: department_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: etterellar
+-- Name: department_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: runner
 --
 
 ALTER SEQUENCE public.department_id_seq OWNED BY public.department.id;
 
 
 --
--- Name: pass; Type: TABLE; Schema: public; Owner: etterellar
+-- Name: pass; Type: TABLE; Schema: public; Owner: runner
 --
 
 CREATE TABLE public.pass (
@@ -111,10 +108,10 @@ CREATE TABLE public.pass (
 );
 
 
-ALTER TABLE public.pass OWNER TO etterellar;
+ALTER TABLE public.pass OWNER TO runner;
 
 --
--- Name: pass_id_seq; Type: SEQUENCE; Schema: public; Owner: etterellar
+-- Name: pass_id_seq; Type: SEQUENCE; Schema: public; Owner: runner
 --
 
 CREATE SEQUENCE public.pass_id_seq
@@ -126,17 +123,17 @@ CREATE SEQUENCE public.pass_id_seq
     CACHE 1;
 
 
-ALTER SEQUENCE public.pass_id_seq OWNER TO etterellar;
+ALTER SEQUENCE public.pass_id_seq OWNER TO runner;
 
 --
--- Name: pass_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: etterellar
+-- Name: pass_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: runner
 --
 
 ALTER SEQUENCE public.pass_id_seq OWNED BY public.pass.id;
 
 
 --
--- Name: scan; Type: TABLE; Schema: public; Owner: etterellar
+-- Name: scan; Type: TABLE; Schema: public; Owner: runner
 --
 
 CREATE TABLE public.scan (
@@ -154,10 +151,10 @@ CREATE TABLE public.scan (
 );
 
 
-ALTER TABLE public.scan OWNER TO etterellar;
+ALTER TABLE public.scan OWNER TO runner;
 
 --
--- Name: scan_id_seq; Type: SEQUENCE; Schema: public; Owner: etterellar
+-- Name: scan_id_seq; Type: SEQUENCE; Schema: public; Owner: runner
 --
 
 CREATE SEQUENCE public.scan_id_seq
@@ -169,17 +166,17 @@ CREATE SEQUENCE public.scan_id_seq
     CACHE 1;
 
 
-ALTER SEQUENCE public.scan_id_seq OWNER TO etterellar;
+ALTER SEQUENCE public.scan_id_seq OWNER TO runner;
 
 --
--- Name: scan_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: etterellar
+-- Name: scan_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: runner
 --
 
 ALTER SEQUENCE public.scan_id_seq OWNED BY public.scan.id;
 
 
 --
--- Name: staff; Type: TABLE; Schema: public; Owner: etterellar
+-- Name: staff; Type: TABLE; Schema: public; Owner: runner
 --
 
 CREATE TABLE public.staff (
@@ -192,10 +189,10 @@ CREATE TABLE public.staff (
 );
 
 
-ALTER TABLE public.staff OWNER TO etterellar;
+ALTER TABLE public.staff OWNER TO runner;
 
 --
--- Name: staff_id_seq; Type: SEQUENCE; Schema: public; Owner: etterellar
+-- Name: staff_id_seq; Type: SEQUENCE; Schema: public; Owner: runner
 --
 
 CREATE SEQUENCE public.staff_id_seq
@@ -207,17 +204,17 @@ CREATE SEQUENCE public.staff_id_seq
     CACHE 1;
 
 
-ALTER SEQUENCE public.staff_id_seq OWNER TO etterellar;
+ALTER SEQUENCE public.staff_id_seq OWNER TO runner;
 
 --
--- Name: staff_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: etterellar
+-- Name: staff_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: runner
 --
 
 ALTER SEQUENCE public.staff_id_seq OWNED BY public.staff.id;
 
 
 --
--- Name: visit; Type: TABLE; Schema: public; Owner: etterellar
+-- Name: visit; Type: TABLE; Schema: public; Owner: runner
 --
 
 CREATE TABLE public.visit (
@@ -231,10 +228,10 @@ CREATE TABLE public.visit (
 );
 
 
-ALTER TABLE public.visit OWNER TO etterellar;
+ALTER TABLE public.visit OWNER TO runner;
 
 --
--- Name: visit_id_seq; Type: SEQUENCE; Schema: public; Owner: etterellar
+-- Name: visit_id_seq; Type: SEQUENCE; Schema: public; Owner: runner
 --
 
 CREATE SEQUENCE public.visit_id_seq
@@ -246,17 +243,17 @@ CREATE SEQUENCE public.visit_id_seq
     CACHE 1;
 
 
-ALTER SEQUENCE public.visit_id_seq OWNER TO etterellar;
+ALTER SEQUENCE public.visit_id_seq OWNER TO runner;
 
 --
--- Name: visit_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: etterellar
+-- Name: visit_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: runner
 --
 
 ALTER SEQUENCE public.visit_id_seq OWNED BY public.visit.id;
 
 
 --
--- Name: visitor; Type: TABLE; Schema: public; Owner: etterellar
+-- Name: visitor; Type: TABLE; Schema: public; Owner: runner
 --
 
 CREATE TABLE public.visitor (
@@ -268,10 +265,10 @@ CREATE TABLE public.visitor (
 );
 
 
-ALTER TABLE public.visitor OWNER TO etterellar;
+ALTER TABLE public.visitor OWNER TO runner;
 
 --
--- Name: visitor_id_seq; Type: SEQUENCE; Schema: public; Owner: etterellar
+-- Name: visitor_id_seq; Type: SEQUENCE; Schema: public; Owner: runner
 --
 
 CREATE SEQUENCE public.visitor_id_seq
@@ -283,66 +280,66 @@ CREATE SEQUENCE public.visitor_id_seq
     CACHE 1;
 
 
-ALTER SEQUENCE public.visitor_id_seq OWNER TO etterellar;
+ALTER SEQUENCE public.visitor_id_seq OWNER TO runner;
 
 --
--- Name: visitor_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: etterellar
+-- Name: visitor_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: runner
 --
 
 ALTER SEQUENCE public.visitor_id_seq OWNED BY public.visitor.id;
 
 
 --
--- Name: access_point id; Type: DEFAULT; Schema: public; Owner: etterellar
+-- Name: access_point id; Type: DEFAULT; Schema: public; Owner: runner
 --
 
 ALTER TABLE ONLY public.access_point ALTER COLUMN id SET DEFAULT nextval('public.access_point_id_seq'::regclass);
 
 
 --
--- Name: department id; Type: DEFAULT; Schema: public; Owner: etterellar
+-- Name: department id; Type: DEFAULT; Schema: public; Owner: runner
 --
 
 ALTER TABLE ONLY public.department ALTER COLUMN id SET DEFAULT nextval('public.department_id_seq'::regclass);
 
 
 --
--- Name: pass id; Type: DEFAULT; Schema: public; Owner: etterellar
+-- Name: pass id; Type: DEFAULT; Schema: public; Owner: runner
 --
 
 ALTER TABLE ONLY public.pass ALTER COLUMN id SET DEFAULT nextval('public.pass_id_seq'::regclass);
 
 
 --
--- Name: scan id; Type: DEFAULT; Schema: public; Owner: etterellar
+-- Name: scan id; Type: DEFAULT; Schema: public; Owner: runner
 --
 
 ALTER TABLE ONLY public.scan ALTER COLUMN id SET DEFAULT nextval('public.scan_id_seq'::regclass);
 
 
 --
--- Name: staff id; Type: DEFAULT; Schema: public; Owner: etterellar
+-- Name: staff id; Type: DEFAULT; Schema: public; Owner: runner
 --
 
 ALTER TABLE ONLY public.staff ALTER COLUMN id SET DEFAULT nextval('public.staff_id_seq'::regclass);
 
 
 --
--- Name: visit id; Type: DEFAULT; Schema: public; Owner: etterellar
+-- Name: visit id; Type: DEFAULT; Schema: public; Owner: runner
 --
 
 ALTER TABLE ONLY public.visit ALTER COLUMN id SET DEFAULT nextval('public.visit_id_seq'::regclass);
 
 
 --
--- Name: visitor id; Type: DEFAULT; Schema: public; Owner: etterellar
+-- Name: visitor id; Type: DEFAULT; Schema: public; Owner: runner
 --
 
 ALTER TABLE ONLY public.visitor ALTER COLUMN id SET DEFAULT nextval('public.visitor_id_seq'::regclass);
 
 
 --
--- Data for Name: access_point; Type: TABLE DATA; Schema: public; Owner: etterellar
+-- Data for Name: access_point; Type: TABLE DATA; Schema: public; Owner: runner
 --
 
 COPY public.access_point (id, name, building, active) FROM stdin;
@@ -356,7 +353,7 @@ COPY public.access_point (id, name, building, active) FROM stdin;
 
 
 --
--- Data for Name: department; Type: TABLE DATA; Schema: public; Owner: etterellar
+-- Data for Name: department; Type: TABLE DATA; Schema: public; Owner: runner
 --
 
 COPY public.department (id, name) FROM stdin;
@@ -370,7 +367,7 @@ COPY public.department (id, name) FROM stdin;
 
 
 --
--- Data for Name: pass; Type: TABLE DATA; Schema: public; Owner: etterellar
+-- Data for Name: pass; Type: TABLE DATA; Schema: public; Owner: runner
 --
 
 COPY public.pass (id, visitor_id, qr_code, max_entries, host_id, purpose, valid_from, valid_to, revoked_at) FROM stdin;
@@ -392,7 +389,7 @@ COPY public.pass (id, visitor_id, qr_code, max_entries, host_id, purpose, valid_
 
 
 --
--- Data for Name: scan; Type: TABLE DATA; Schema: public; Owner: etterellar
+-- Data for Name: scan; Type: TABLE DATA; Schema: public; Owner: runner
 --
 
 COPY public.scan (id, pass_id, access_point_id, direction, result, deny_reason, scanned_at, synced_at) FROM stdin;
@@ -415,27 +412,27 @@ COPY public.scan (id, pass_id, access_point_id, direction, result, deny_reason, 
 
 
 --
--- Data for Name: staff; Type: TABLE DATA; Schema: public; Owner: etterellar
+-- Data for Name: staff; Type: TABLE DATA; Schema: public; Owner: runner
 --
 
 COPY public.staff (id, name, email, department_id, role) FROM stdin;
-1	Петров Пётр Сергеевич	petrov@mephi.ru	1	staff
-2	Сидорова Анна Викторовна	sidorova@mephi.ru	1	staff
-3	Кузнецов Дмитрий Олегович	kuznetsov@mephi.ru	2	staff
-4	Морозова Елена Ивановна	morozova@mephi.ru	2	staff
-5	Волков Игорь Анатольевич	volkov@mephi.ru	2	staff
-6	Никитин Сергей Павлович	nikitin@mephi.ru	3	security
-7	Егорова Ольга Дмитриевна	egorova@mephi.ru	3	security
-8	Тарасов Артём Юрьевич	tarasov@mephi.ru	3	security
-9	Лебедев Максим Андреевич	lebedev@mephi.ru	4	staff
-10	Соколова Мария Алексеевна	sokolova@mephi.ru	4	staff
-11	Фёдоров Роман Витальевич	fedorov@mephi.ru	5	staff
-12	Зайцева Наталья Борисовна	zaytseva@mephi.ru	6	staff
+1	Петров Пётр Сергеевич	petrov@email.ru	1	staff
+2	Сидорова Анна Викторовна	sidorova@email.ru	1	staff
+3	Кузнецов Дмитрий Олегович	kuznetsov@email.ru	2	staff
+4	Морозова Елена Ивановна	morozova@email.ru	2	staff
+5	Волков Игорь Анатольевич	volkov@email.ru	2	staff
+6	Никитин Сергей Павлович	nikitin@email.ru	3	security
+7	Егорова Ольга Дмитриевна	egorova@email.ru	3	security
+8	Тарасов Артём Юрьевич	tarasov@email.ru	3	security
+9	Лебедев Максим Андреевич	lebedev@email.ru	4	staff
+10	Соколова Мария Алексеевна	sokolova@email.ru	4	staff
+11	Фёдоров Роман Витальевич	fedorov@email.ru	5	staff
+12	Зайцева Наталья Борисовна	zaytseva@email.ru	6	staff
 \.
 
 
 --
--- Data for Name: visit; Type: TABLE DATA; Schema: public; Owner: etterellar
+-- Data for Name: visit; Type: TABLE DATA; Schema: public; Owner: runner
 --
 
 COPY public.visit (id, pass_id, entry_point_id, exit_point_id, checked_in_at, checked_out_at) FROM stdin;
@@ -458,7 +455,7 @@ COPY public.visit (id, pass_id, entry_point_id, exit_point_id, checked_in_at, ch
 
 
 --
--- Data for Name: visitor; Type: TABLE DATA; Schema: public; Owner: etterellar
+-- Data for Name: visitor; Type: TABLE DATA; Schema: public; Owner: runner
 --
 
 COPY public.visitor (id, full_name, phone, category, organization) FROM stdin;
@@ -478,56 +475,56 @@ COPY public.visitor (id, full_name, phone, category, organization) FROM stdin;
 
 
 --
--- Name: access_point_id_seq; Type: SEQUENCE SET; Schema: public; Owner: etterellar
+-- Name: access_point_id_seq; Type: SEQUENCE SET; Schema: public; Owner: runner
 --
 
 SELECT pg_catalog.setval('public.access_point_id_seq', 6, true);
 
 
 --
--- Name: department_id_seq; Type: SEQUENCE SET; Schema: public; Owner: etterellar
+-- Name: department_id_seq; Type: SEQUENCE SET; Schema: public; Owner: runner
 --
 
 SELECT pg_catalog.setval('public.department_id_seq', 6, true);
 
 
 --
--- Name: pass_id_seq; Type: SEQUENCE SET; Schema: public; Owner: etterellar
+-- Name: pass_id_seq; Type: SEQUENCE SET; Schema: public; Owner: runner
 --
 
 SELECT pg_catalog.setval('public.pass_id_seq', 14, true);
 
 
 --
--- Name: scan_id_seq; Type: SEQUENCE SET; Schema: public; Owner: etterellar
+-- Name: scan_id_seq; Type: SEQUENCE SET; Schema: public; Owner: runner
 --
 
 SELECT pg_catalog.setval('public.scan_id_seq', 15, true);
 
 
 --
--- Name: staff_id_seq; Type: SEQUENCE SET; Schema: public; Owner: etterellar
+-- Name: staff_id_seq; Type: SEQUENCE SET; Schema: public; Owner: runner
 --
 
 SELECT pg_catalog.setval('public.staff_id_seq', 12, true);
 
 
 --
--- Name: visit_id_seq; Type: SEQUENCE SET; Schema: public; Owner: etterellar
+-- Name: visit_id_seq; Type: SEQUENCE SET; Schema: public; Owner: runner
 --
 
 SELECT pg_catalog.setval('public.visit_id_seq', 15, true);
 
 
 --
--- Name: visitor_id_seq; Type: SEQUENCE SET; Schema: public; Owner: etterellar
+-- Name: visitor_id_seq; Type: SEQUENCE SET; Schema: public; Owner: runner
 --
 
 SELECT pg_catalog.setval('public.visitor_id_seq', 12, true);
 
 
 --
--- Name: access_point access_point_pkey; Type: CONSTRAINT; Schema: public; Owner: etterellar
+-- Name: access_point access_point_pkey; Type: CONSTRAINT; Schema: public; Owner: runner
 --
 
 ALTER TABLE ONLY public.access_point
@@ -535,7 +532,7 @@ ALTER TABLE ONLY public.access_point
 
 
 --
--- Name: department department_name_key; Type: CONSTRAINT; Schema: public; Owner: etterellar
+-- Name: department department_name_key; Type: CONSTRAINT; Schema: public; Owner: runner
 --
 
 ALTER TABLE ONLY public.department
@@ -543,7 +540,7 @@ ALTER TABLE ONLY public.department
 
 
 --
--- Name: department department_pkey; Type: CONSTRAINT; Schema: public; Owner: etterellar
+-- Name: department department_pkey; Type: CONSTRAINT; Schema: public; Owner: runner
 --
 
 ALTER TABLE ONLY public.department
@@ -551,7 +548,7 @@ ALTER TABLE ONLY public.department
 
 
 --
--- Name: pass pass_pkey; Type: CONSTRAINT; Schema: public; Owner: etterellar
+-- Name: pass pass_pkey; Type: CONSTRAINT; Schema: public; Owner: runner
 --
 
 ALTER TABLE ONLY public.pass
@@ -559,7 +556,7 @@ ALTER TABLE ONLY public.pass
 
 
 --
--- Name: pass pass_qr_code_key; Type: CONSTRAINT; Schema: public; Owner: etterellar
+-- Name: pass pass_qr_code_key; Type: CONSTRAINT; Schema: public; Owner: runner
 --
 
 ALTER TABLE ONLY public.pass
@@ -567,7 +564,7 @@ ALTER TABLE ONLY public.pass
 
 
 --
--- Name: scan scan_pkey; Type: CONSTRAINT; Schema: public; Owner: etterellar
+-- Name: scan scan_pkey; Type: CONSTRAINT; Schema: public; Owner: runner
 --
 
 ALTER TABLE ONLY public.scan
@@ -575,7 +572,7 @@ ALTER TABLE ONLY public.scan
 
 
 --
--- Name: staff staff_email_key; Type: CONSTRAINT; Schema: public; Owner: etterellar
+-- Name: staff staff_email_key; Type: CONSTRAINT; Schema: public; Owner: runner
 --
 
 ALTER TABLE ONLY public.staff
@@ -583,7 +580,7 @@ ALTER TABLE ONLY public.staff
 
 
 --
--- Name: staff staff_pkey; Type: CONSTRAINT; Schema: public; Owner: etterellar
+-- Name: staff staff_pkey; Type: CONSTRAINT; Schema: public; Owner: runner
 --
 
 ALTER TABLE ONLY public.staff
@@ -591,7 +588,7 @@ ALTER TABLE ONLY public.staff
 
 
 --
--- Name: visit visit_pkey; Type: CONSTRAINT; Schema: public; Owner: etterellar
+-- Name: visit visit_pkey; Type: CONSTRAINT; Schema: public; Owner: runner
 --
 
 ALTER TABLE ONLY public.visit
@@ -599,7 +596,7 @@ ALTER TABLE ONLY public.visit
 
 
 --
--- Name: visitor visitor_pkey; Type: CONSTRAINT; Schema: public; Owner: etterellar
+-- Name: visitor visitor_pkey; Type: CONSTRAINT; Schema: public; Owner: runner
 --
 
 ALTER TABLE ONLY public.visitor
@@ -607,7 +604,7 @@ ALTER TABLE ONLY public.visitor
 
 
 --
--- Name: pass pass_host_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: etterellar
+-- Name: pass pass_host_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: runner
 --
 
 ALTER TABLE ONLY public.pass
@@ -615,7 +612,7 @@ ALTER TABLE ONLY public.pass
 
 
 --
--- Name: pass pass_visitor_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: etterellar
+-- Name: pass pass_visitor_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: runner
 --
 
 ALTER TABLE ONLY public.pass
@@ -623,7 +620,7 @@ ALTER TABLE ONLY public.pass
 
 
 --
--- Name: scan scan_access_point_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: etterellar
+-- Name: scan scan_access_point_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: runner
 --
 
 ALTER TABLE ONLY public.scan
@@ -631,7 +628,7 @@ ALTER TABLE ONLY public.scan
 
 
 --
--- Name: scan scan_pass_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: etterellar
+-- Name: scan scan_pass_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: runner
 --
 
 ALTER TABLE ONLY public.scan
@@ -639,7 +636,7 @@ ALTER TABLE ONLY public.scan
 
 
 --
--- Name: staff staff_department_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: etterellar
+-- Name: staff staff_department_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: runner
 --
 
 ALTER TABLE ONLY public.staff
@@ -647,7 +644,7 @@ ALTER TABLE ONLY public.staff
 
 
 --
--- Name: visit visit_entry_point_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: etterellar
+-- Name: visit visit_entry_point_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: runner
 --
 
 ALTER TABLE ONLY public.visit
@@ -655,7 +652,7 @@ ALTER TABLE ONLY public.visit
 
 
 --
--- Name: visit visit_exit_point_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: etterellar
+-- Name: visit visit_exit_point_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: runner
 --
 
 ALTER TABLE ONLY public.visit
@@ -663,7 +660,7 @@ ALTER TABLE ONLY public.visit
 
 
 --
--- Name: visit visit_pass_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: etterellar
+-- Name: visit visit_pass_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: runner
 --
 
 ALTER TABLE ONLY public.visit
